@@ -1,7 +1,7 @@
 import { ITodo } from 'interfaces';
 import { Api } from 'providers';
 
-type TodoSend = Pick<ITodo, 'task' | 'isDone'>;
+export type TodoSend = Pick<ITodo, 'task' | 'isDone'>;
 
 const getAllTodos = () => Api.get<ITodo[]>('/v1/todos');
 
